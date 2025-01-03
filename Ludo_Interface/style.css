@@ -1,0 +1,312 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: border-box;
+}
+
+.ludo{
+    transform: scale(0.6);
+}
+
+/* team-upper */
+/* team-red */
+.team-red{
+    height: 200px;
+    width: 200px;
+    border: 30px solid red;
+    border-width: 60px;
+}
+
+.red-upper{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top:30px;
+}
+
+.red-lower{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+
+.red1{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: red;
+}
+.red2{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: red;
+}
+
+.red3{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: red;
+}
+.red4{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: red;
+}
+
+/* team-yellow */
+.team-yellow{
+    height: 200px;
+    width: 200px;
+    border: 30px solid yellow;
+    border-width: 60px;
+}
+
+.yellow-upper{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top:30px;
+}
+
+.yellow-lower{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+
+.yellow1{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: yellow;
+}
+.yellow2{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: yellow;
+}
+
+.yellow3{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: yellow;
+}
+.yellow4{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: yellow;
+}
+
+.team-upper{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* team-lower */
+/* team-blue */
+.team-blue{
+    height: 200px;
+    width: 200px;
+    border: 30px solid blue;
+    border-width: 60px;
+}
+
+.blue-upper{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top:30px;
+}
+
+.blue-lower{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+
+.blue1{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: blue;
+}
+.blue2{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: blue;
+}
+
+.blue3{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: blue;
+}
+.blue4{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: blue;
+}
+
+/* team-green */
+.team-green{
+    height: 200px;
+    width: 200px;
+    border: 30px solid green;
+    border-width: 60px;
+}
+
+.green-upper{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top:30px;
+}
+
+.green-lower{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+
+.green1{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: green;
+}
+.green2{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: green;
+}
+
+.green3{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: green;
+}
+.green4{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: green;
+}
+
+.team-lower{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 313px;
+}
+.table1-style{
+    border: 1px solid black;
+    border-collapse: collapse;
+    position: absolute;
+    top: 0;
+    left: 475px;
+}
+.table2-style{
+    border: 1px solid black;
+    border-collapse: collapse;
+    position: absolute;
+    top: 633px;
+    left: 475px;
+}
+.table3-style{
+    border: 1px solid black;
+    border-collapse: collapse;
+    position: absolute;
+    top: 317px;
+    left: 159px;
+    transform: rotate(90deg);
+}
+.table4-style{
+    border: 1px solid black;
+    border-collapse: collapse;
+    position: absolute;
+    top: 317px;
+    right: 159px;
+    transform: rotate(90deg);
+}
+td{
+    border: 1px solid black;
+    padding: 17.25px;
+    padding-right: 65px;
+    color: white;
+}
+
+/* ludo finish area */
+.square{
+    width: 313px;
+    height: 313px;
+    background-color: skyblue;
+    position: absolute;
+    top: 320px;
+    left: 475px;
+}
+  
+.triangle1{
+    clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+    width: 0.1rem;
+    height: 0.1rem;
+    height: 4px;
+    border-left: 160px solid transparent;
+    border-right: 152px solid transparent;
+    border-bottom: 150px solid transparent;
+    border-color: blue;
+    position: absolute;
+    bottom: 0.25px;
+    right: 1px;
+    transform: rotate(360deg);
+}
+
+.triangle2{
+    clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+    width: 0.1rem;
+    height: 0.1rem;
+    height: 4px;
+    border-left: 160px solid transparent;
+    border-right: 152px solid transparent;
+    border-bottom: 150px solid transparent;
+    border-color: red;
+    position: absolute;
+    bottom: 80px;
+    right: 78px;
+    transform: rotate(90deg);
+}
+
+.triangle3{
+    clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+    width: 0.1rem;
+    height: 0.1rem;
+    height: 4px;
+    border-left: 160px solid transparent;
+    border-right: 152px solid transparent;
+    border-bottom: 150px solid transparent;
+    border-color: yellow;
+    position: absolute;
+    bottom: 159px;
+    right: 1px;
+    transform: rotate(180deg);
+}
+
+.triangle4{
+    clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+    width: 0.1rem;
+    height: 0.1rem;
+    height: 4px;
+    border-left: 160px solid transparent;
+    border-right: 152px solid transparent;
+    border-bottom: 155px solid transparent;
+    border-color: green;
+    position: absolute;
+    bottom: 78px;
+    left: 76px;
+    transform: rotate(270deg);
+}

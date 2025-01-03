@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Portfolio</title>
+    <!-- Link to Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <h2 class="portfolio-heading">My Portfolio</h2>
+            <ul class="nav-links">
+                <li><a href="#home-area" id="home-link">Home</a></li>
+                <li><a href="#about-area" id="about-link">About</a></li>
+                <li><a href="#skills-area" id="skills-link">Skills</a></li>
+                <li><a href="#projects-area" id="projects-link">Projects</a></li>
+                <li><a href="#contact-area" id="contact-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Home Section -->
+        <section id="home-area" class="section home">
+            <div class="content">
+                <h1>Hello, Welcome</h1>
+                <p>
+                    I am Ayush Kumar,<br>I am a final-year BCA student, pursuing from CIMAGE.
+                    This website showcases my skills and projects as I prepare for a career in tech,
+                    particularly in [specific areas like programming, web development,
+                    or app design].
+                </p>
+                <p> I invite you to explore my portfolio and discover my passion for technology.
+                    Thank you for visiting!
+                </p>
+            </div>
+            <div class="image">
+                <img src="/images/portfolio_images/profile_pic1.jpg" alt="Profile Picture">
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about-area" class="section about">
+            <div class="about-container">
+                <!-- About Image  -->
+                <div class="about-image">
+                    <img src="/images/portfolio_images/profile_pic3.jpg" alt="Profile Picture">
+                </div>
+                <!-- About Text -->
+                <div class="about-text">
+                    <h2>About Me</h2>
+                    <p>
+                        Hello! I'm Ayush Kumar, a final-year BCA student at CIMAGE College in Patna. My journey into technology began during my +2 education at Baldwin Academy, where I first developed an interest in programming and technology. Over the years, I've honed my skills in programming languages such as Java and C++, as well as web development technologies like HTML, CSS, and JavaScript. I enjoy taking on challenges, and the process of problem-solving has been a driving factor in my growth as a developer.
+                        <br><br>
+                        In addition to my academic pursuits, I have worked on various independent projects that have helped me sharpen my critical thinking and practical skills. I am passionate about continuous learning and constantly seek new opportunities to enhance my knowledge and expertise in the tech field.
+                        <br><br>
+                        Outside of academics, I love reading, playing games, and coding. These activities help me maintain a balanced lifestyle and stay creatively engaged. Thank you for visiting my portfolio. I am excited about the future and open to collaborating on exciting projects. Let's connect!
+                    </p>
+                </div>    
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills-area">
+            <h2>My Skills</h2> <!-- This is the centered heading -->
+            <div class="skills-container">
+                <!-- Skill 1 -->
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="/images/portfolio_images/php_svg.svg" alt="php-logo" height="100px" width="70px">
+                    </div>
+                    <div class="skill-progress">
+                        <div class="skill-progress-bar" data-skill="PHP"></div>
+                    </div>
+                </div>
+                <!-- Skill 2 -->
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="/images/portfolio_images/c++.svg" alt="C++-logo">
+                    </div>
+                    <div class="skill-progress">
+                        <div class="skill-progress-bar" data-skill="C++"></div>
+                    </div>
+                </div>
+                <!-- Skill 3 -->
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="/images/portfolio_images/java.svg" alt="java-logo">
+                    </div>
+                    <div class="skill-progress">
+                        <div class="skill-progress-bar" data-skill="Java"></div>
+                    </div>
+                </div>
+                <!-- Skill 4 -->
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="/images/portfolio_images/html5.svg" alt="html-logo">
+                    </div>
+                    <div class="skill-progress">
+                        <div class="skill-progress-bar" data-skill="HTML"></div>
+                    </div>
+                </div>
+                <!-- Skill 5 -->
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="/images/portfolio_images/css3.svg" alt="css-logo">
+                    </div>
+                    <div class="skill-progress">
+                        <div class="skill-progress-bar" data-skill="CSS"></div>
+                    </div>
+                </div>
+                <!-- Skill 6 -->
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="/images/portfolio_images/javascript.svg" alt="javascript-logo">
+                    </div>
+                    <div class="skill-progress">
+                        <div class="skill-progress-bar" data-skill="JavaScript"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Section -->
+<section id="projects-area">
+    <h2>My Projects</h2>
+
+    <!-- Container for Project Cards -->
+    <div class="projects-container">
+
+        <!-- Project Card 1 -->
+        <a href="/Amazon_Clone/index.html" target="_blank">
+            <div class="project-card">
+                <img src="/Amazon_Clone/amazon_logo.jpg" alt="Project 1 Image">
+                <div class="description">
+                    <h3>Amazon Clone</h3>
+                    <p>A fully responsive front-end replica of Amazon.com, designed to showcase product listings and navigation using HTML and CSS.</p>
+                </div>
+            </div>
+        </a>
+
+        <!-- Project Card 2 -->
+        <a href="/Attendance_Register/index.html" target="_blank">
+            <div class="project-card">
+                <img src="/images/portfolio_images/attendance_sheet_img.jpg" alt="Project 2 Image">
+                <div class="description">
+                    <h3>Attendance Register</h3>
+                    <p>A simple fully responsive attendance register built using HTML, featuring radio buttons, columns, rows, and a submit button to mark students' attendance.</p>
+                </div>
+            </div>
+        </a>
+
+        <!-- Project Card 3 -->
+        <a href="/Login_Page/index.html" target="_blank">
+            <div class="project-card">
+                <img src="/images/portfolio_images/login_img.jpeg" alt="Project 3 Image">
+                <div class="description">
+                    <h3>Login Page</h3>
+                    <p>A simple and fully responsive login page designed using HTML and CSS. It includes fields for email address and password, demonstrating a clean and responsive layout, with no functionality, just showcasing HTML and CSS skills.</p>
+                </div>
+            </div>
+        </a>
+
+        <!-- Project Card 4 (Updated for opening video in new tab) -->
+        <a href="/DLS_Project_Demonstration.mp4" target="_blank">
+            <div class="project-card">
+                <img src="/images/portfolio_images/DLS_img2.png" alt="Project 4 Image">
+                <div class="description">
+                    <h3>Digital Library System</h3>
+                    <p>A fully responsive, full-stack project made using HTML, CSS, JavaScript (Frontend), and PHP with MySQL (Backend).
+
+                        Admin Panel: Manages books, students, and generates reports on book status.
+                        Student Panel: Browse, issue books, and track issued books with due dates.</p>
+                </div>
+            </div>
+        </a>
+
+    </div>
+</section>
+
+
+        <!-- Contact Section -->
+        <div id="contact-area">
+            <h2 id="contact-heading">Contact Me</h2>
+            <div class="contact-container">
+                <!-- Contact Details -->
+                <div class="contact-details">
+                    <h3>My Contact Details</h3>
+                    <p><strong>Phone :-</strong> (+91) 91621xyz</p>
+                    <p><strong>E mail :-</strong> ayush27a2@gmail.com</p>
+                    <p><strong>Address :-</strong> New Jakkanpur, Gardanibagh, Patna-800001.</p>
+                    <p><strong>Social Media :-</strong>
+                        <a href="https://www.instagram.com/ayush27a2/?locale=zh_CN&hl=af" target="_blank"><img src="/images/portfolio_images/instagram_icon.svg" alt="Instagram" height="35px" width="45px"></a>
+                        <a href="https://www.facebook.com/ayush27a2fb/" target="_blank"><img src="/images/portfolio_images/facebook_icon.svg" alt="Facebook" height="35px" width="45px"></a>
+                    </p>
+                </div>
+
+                <!-- Query Form -->
+                <div class="contact-form">
+                    <p>*Have a Query? Fill Out the Form Below.*</p>
+                    <form>
+                        <div class="form-field">
+                            <label for="name">Name :</label>
+                            <input type="text" id="name" placeholder="Enter your name">
+                        </div>
+                        <div class="form-field">
+                            <label for="email">E-mail :</label>
+                            <input type="email" id="email" placeholder="Enter your E-mail">
+                        </div>
+                        <div class="form-field">
+                            <label for="query">Query :</label>
+                            <textarea id="query" placeholder="Write your queries here"></textarea>
+                        </div>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Section -->
+        <footer>
+            <p>&copy; 2024 Ayush Kumar | All Rights Reserved</p>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,309 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+.login_page_bg {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(45deg, #ff9966, #cc33ff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login_container {
+    height: 85%;
+    width: 70%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Floating shadow for container */
+    transition: all 0.3s ease-in-out;
+    position: relative; /* Added for absolute positioning of logos */
+}
+
+.bg_image {
+    height: 100%;
+    width: 55%;
+    background-color: #bb65fe;
+    background-image: url("/Login_Page/background_gradient.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    padding: 20px;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+}
+
+.bg_image_overlay {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.bg_image .img1 {
+    height: 180px;
+    width: 180px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease-in-out;
+    position: absolute;
+    top: 10px; /* Moved W logo further up */
+    left: 10px; /* Adjusted left position for alignment */
+}
+
+.bg_image b {
+    color: rgb(99, 33, 132);
+    font-size: 50px;
+    text-align: center;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    transition: all 0.3s ease-in-out;
+    position: absolute;
+    top: 50%; /* Centered vertically */
+    left: 50%; /* Centered horizontally */
+    transform: translate(-50%, -50%); /* Centering */
+}
+
+.bg_image .img2 {
+    height: 70px; /* Increased size of exit icon */
+    width: 70px; /* Increased size of exit icon */
+    position: absolute;
+    bottom: 20px; /* Exit logo positioned at bottom */
+    left: 10px; /* Left side of the container */
+}
+
+.login_section {
+    height: 100%;
+    width: 45%;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    padding: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.h2 {
+    margin-bottom: 30px;
+    color: #bb65fe;
+    font-size: 24px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    margin-top: 20px;
+}
+
+.email, .pass {
+    margin-bottom: 15px;
+    width: 100%;
+    max-width: 310px;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid rgb(135, 165, 235);
+    border-radius: 5px;
+    outline: none;
+    font-size: 14px;
+    transition: all 0.3s ease-in-out;
+}
+
+.login_button {
+    height: 45px;
+    width: 100%;
+    max-width: 305px;
+    background-color: #bb65fe;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.login_button:hover {
+    background-color: rgb(250, 168, 16);
+}
+
+.remember {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.remember p {
+    margin-left: 5px;
+    font-size: 14px;
+}
+
+.forgot_pass {
+    color: #bb65fe;
+    font-size: 14px;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
+.forgot_pass:hover {
+    text-decoration: underline;
+}
+
+.small_text {
+    color: darkgray;
+    font-size: 12px;
+    margin: 15px 0;
+}
+
+.google_button, .facebook_button {
+    height: 45px;
+    width: 100%;
+    max-width: 305px;
+    color: white;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.google_button {
+    background-color: #357AE8;
+}
+
+.google_button img {
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+}
+
+.google_button:hover {
+    background-color: rgb(40, 92, 175);
+}
+
+.facebook_button {
+    background-color: #4267B2;
+}
+
+.facebook_button img {
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+}
+
+.facebook_button:hover {
+    background-color: #263f6e;
+}
+
+@media (max-width: 1024px) {
+    .login_container {
+        width: 85%;
+    }
+
+    .bg_image .img1 {
+        height: 150px;
+        width: 150px;
+    }
+
+    .bg_image b {
+        font-size: 40px;
+    }
+
+    .h2 {
+        font-size: 20px;
+    }
+
+    .email, .pass, .login_button, .google_button, .facebook_button {
+        width: 100%;
+        max-width: 290px;
+    }
+
+    .small_text {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .login_container {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .bg_image {
+        width: 100%;
+        height: 50%;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 15px;
+    }
+
+    .login_section {
+        width: 100%;
+        height: 50%;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 15px;
+    }
+
+    .h2 {
+        font-size: 18px;
+    }
+
+    .bg_image b {
+        font-size: 30px;
+    }
+
+    .email, .pass, .login_button, .google_button, .facebook_button {
+        width: 90%;
+        max-width: none;
+    }
+
+    .small_text {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .bg_image .img1 {
+        height: 120px;
+        width: 120px;
+    }
+
+    .bg_image b {
+        font-size: 25px;
+    }
+
+    .login_section {
+        padding: 10px;
+    }
+
+    .email, .pass {
+        font-size: 13px;
+    }
+
+    .login_button {
+        height: 40px;
+    }
+
+    .google_button, .facebook_button {
+        height: 40px;
+    }
+}
