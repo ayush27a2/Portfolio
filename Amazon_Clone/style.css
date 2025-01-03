@@ -24,7 +24,7 @@
 }
 
 .logo {
-    background-image: url("Amazon_Clone/amazon_logo.jpg");
+    background-image: url("Portfolio/Amazon_Clone/amazon_logo.jpg");
     background-size: contain;
     background-repeat: no-repeat;
     height: 50px;
@@ -166,7 +166,7 @@ span {
 
 /* Hero section */
 .hero-section {
-    background-image: url("Amazon_Clone/hero_section.jpg");
+    background-image: url("Portfolio/Amazon_Clone/hero_section.jpg");
     background-size: contain;
     background-position: center center; /* Ensure the image stays centered */
     display: flex;
@@ -303,7 +303,7 @@ ul a:hover {
 }
 
 .logo2 {
-    background-image: url("Amazon_Clone/amazon_logo2.jpg");
+    background-image: url("Portfolio/Amazon_Clone/amazon_logo2.jpg");
     background-size: contain;
     background-repeat: no-repeat;
     height: 50px;
